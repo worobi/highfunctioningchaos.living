@@ -1,0 +1,28 @@
+<svg width="520" height="104" viewBox="0 0 520 104" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;display=swap');
+    </style>
+  </defs>
+
+  <!-- Transparent background — works on dark or light surfaces -->
+
+  <!-- "HIGH FUNCTIONING" -->
+  <text
+    x="2"
+    y="26"
+    font-family="'Bebas Neue', 'Arial Narrow', sans-serif"
+    font-size="24"
+    letter-spacing="5"
+    fill="#F5EBDD"
+    fill-opacity="0.82">HIGH FUNCTIONING</text>
+
+  <!-- "CHAOS." -->
+  <text
+    x="0"
+    y="100"
+    font-family="'Bebas Neue', 'Arial Narrow', sans-serif"
+    font-size="78"
+    letter-spacing="2"
+    fill="#D7263D">CHAOS.</text>
+</svg>

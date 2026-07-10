@@ -1,0 +1,16 @@
+.DS_Store
+**/.DS_Store
+
+# Local agent/infrastructure notes, not public website content.
+AGENTS.md
+infra/
+
+# Draft/planning notes.
+HFC_Kickoff_Post_and_Topics.md
+
+# Product source/packages should not be publicly served by the website unless
+# intentionally linked as free downloads.
+hfc-os-notion-template/
+hfc-os-notion-template.zip
+hfc-theme.zip
+

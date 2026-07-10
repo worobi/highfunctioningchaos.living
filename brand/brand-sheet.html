@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>High Functioning Chaos — Brand Sheet</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --charcoal: #1A1A1A;
+      --beige:    #F5EBDD;
+      --crimson:  #D7263D;
+      --beige-dark: #e8d9c5;
+      --charcoal-soft: #2e2e2e;
+      --mid: #888;
+    }
+    body {
+      background: #111;
+      color: var(--beige);
+      font-family: 'Open Sans', sans-serif;
+      font-size: 15px;
+      line-height: 1.6;
+      padding: 3rem 2rem;
+    }
+    .sheet {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    /* ── PAGE HEADER ── */
+    .page-header {
+      border-bottom: 1px solid rgba(245,235,221,0.1);
+      padding-bottom: 2.5rem;
+      margin-bottom: 3.5rem;
+    }
+    .page-header .label {
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--crimson);
+      margin-bottom: 0.6rem;
+    }
+    .page-header h1 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 3.2rem;
+      letter-spacing: 0.04em;
+      color: var(--beige);
+      line-height: 1;
+    }
+    .page-header p {
+      font-size: 0.9rem;
+      color: rgba(245,235,221,0.45);
+      margin-top: 0.6rem;
+      font-style: italic;
+    }
+
+    /* ── SECTION ── */
+    .section {
+      margin-bottom: 4rem;
+    }
+    .section-label {
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--crimson);
+      margin-bottom: 1.4rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid rgba(215,38,61,0.2);
+    }
+
+    /* ── LOGO PREVIEWS ── */
+    .logo-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+    .logo-preview {
+      border: 1px solid rgba(245,235,221,0.08);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .logo-preview .canvas {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 2.5rem 2rem;
+    }
+    .logo-preview .canvas.dark  { background: var(--charcoal); }
+    .logo-preview .canvas.light { background: var(--beige); }
+    .logo-preview .canvas.icon  {
+      background: var(--charcoal);
+      justify-content: center;
+      padding: 2rem;
+    }
+    .logo-preview .meta {
+      background: #1c1c1c;
+      padding: 0.8rem 1.2rem;
+      font-size: 0.72rem;
+      color: rgba(245,235,221,0.4);
+      letter-spacing: 0.05em;
+    }
+    .logo-preview img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+    .icon-wrap img {
+      width: 120px;
+      height: 120px;
+    }
+
+    /* ── CHAOS MARK EXPLAINER ── */
+    .mark-explainer {
+      display: flex;
+      gap: 3rem;
+      align-items: flex-start;
+      background: var(--charcoal-soft);
+      border: 1px solid rgba(245,235,221,0.06);
+      border-radius: 4px;
+      padding: 2.5rem 2rem;
+    }
+    .mark-demo {
+      flex-shrink: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .bar { border-radius: 2px; }
+    .bar-1 { width: 60px; height: 7px; background: var(--beige); }
+    .bar-2 { width: 42px; height: 7px; background: var(--crimson); margin-left: 12px; }
+    .bar-3 { width: 60px; height: 7px; background: var(--beige); }
+    .mark-desc h3 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.4rem;
+      letter-spacing: 0.05em;
+      color: var(--beige);
+      margin-bottom: 0.5rem;
+    }
+    .mark-desc p {
+      font-size: 0.88rem;
+      color: rgba(245,235,221,0.55);
+      line-height: 1.65;
+    }
+
+    /* ── COLOR PALETTE ── */
+    .color-swatches {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    .swatch {
+      width: 160px;
+    }
+    .swatch-block {
+      height: 100px;
+      border-radius: 3px;
+      margin-bottom: 0.9rem;
+      border: 1px solid rgba(255,255,255,0.06);
+    }
+    .swatch-name {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.1rem;
+      letter-spacing: 0.06em;
+      color: var(--beige);
+      margin-bottom: 0.2rem;
+    }
+    .swatch-hex {
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      color: rgba(245,235,221,0.4);
+      font-family: 'Courier New', monospace;
+      margin-bottom: 0.25rem;
+    }
+    .swatch-use {
+      font-size: 0.75rem;
+      color: rgba(245,235,221,0.35);
+      font-style: italic;
+    }
+
+    /* ── TYPOGRAPHY ── */
+    .type-samples {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+    .type-row {
+      background: var(--charcoal-soft);
+      border: 1px solid rgba(245,235,221,0.06);
+      border-radius: 4px;
+      padding: 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 2rem;
+    }
+    .type-sample { flex: 1; }
+    .type-meta {
+      flex-shrink: 0;
+      width: 160px;
+      text-align: right;
+    }
+    .type-meta .tf-name {
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--crimson);
+      margin-bottom: 0.3rem;
+    }
+    .type-meta .tf-spec {
+      font-size: 0.72rem;
+      color: rgba(245,235,221,0.35);
+      line-height: 1.5;
+    }
+    .bebas-h1 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 3.4rem;
+      letter-spacing: 0.02em;
+      color: var(--beige);
+      line-height: 0.95;
+    }
+    .bebas-h1 .c { color: var(--crimson); }
+    .bebas-h2 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.8rem;
+      letter-spacing: 0.06em;
+      color: var(--beige);
+    }
+    .bebas-nav {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--beige);
+      opacity: 0.75;
+    }
+    .open-body {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1rem;
+      color: rgba(245,235,221,0.85);
+      max-width: 420px;
+      line-height: 1.75;
+    }
+    .open-tagline {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1.2rem;
+      font-style: italic;
+      font-weight: 300;
+      color: var(--beige-dark);
+    }
+    .open-eyebrow {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--crimson);
+    }
+
+    /* ── TONE RAIL ── */
+    .tone-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+    .tone-card {
+      background: var(--charcoal-soft);
+      border: 1px solid rgba(245,235,221,0.06);
+      border-radius: 4px;
+      padding: 1.4rem 1.6rem;
+    }
+    .tone-card.do { border-left: 3px solid var(--crimson); }
+    .tone-card.dont { border-left: 3px solid rgba(245,235,221,0.15); }
+    .tone-card .heading {
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      margin-bottom: 0.8rem;
+    }
+    .tone-card.do .heading { color: var(--crimson); }
+    .tone-card.dont .heading { color: rgba(245,235,221,0.3); }
+    .tone-card ul {
+      list-style: none;
+      padding: 0;
+    }
+    .tone-card ul li {
+      font-size: 0.85rem;
+      color: rgba(245,235,221,0.65);
+      padding: 0.3rem 0;
+      padding-left: 1.1em;
+      position: relative;
+      line-height: 1.5;
+    }
+    .tone-card.do ul li::before {
+      content: '→';
+      position: absolute;
+      left: 0;
+      color: var(--crimson);
+      font-size: 0.7rem;
+      top: 0.35rem;
+    }
+    .tone-card.dont ul li::before {
+      content: '×';
+      position: absolute;
+      left: 0;
+      color: rgba(245,235,221,0.2);
+      font-size: 0.7rem;
+      top: 0.35rem;
+    }
+
+    /* ── HASHTAG / TAGLINE ── */
+    .identity-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-top: 1rem;
+    }
+    .pill {
+      background: rgba(215,38,61,0.1);
+      border: 1px solid rgba(215,38,61,0.3);
+      border-radius: 2px;
+      padding: 0.5rem 1rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      color: var(--crimson);
+    }
+    .pill.neutral {
+      background: rgba(245,235,221,0.05);
+      border-color: rgba(245,235,221,0.12);
+      color: rgba(245,235,221,0.6);
+    }
+
+    /* ── FOOTER ── */
+    .sheet-footer {
+      margin-top: 5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(245,235,221,0.06);
+      font-size: 0.72rem;
+      color: rgba(245,235,221,0.2);
+      display: flex;
+      justify-content: space-between;
+    }
+  </style>
+</head>
+<body>
+<div class="sheet">
+
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <div class="label">Brand Identity Reference</div>
+    <h1>High Functioning Chaos</h1>
+    <p>Brandon &amp; Monica Worobi · 2026 · Internal use — not for distribution</p>
+  </div>
+
+  <!-- LOGO ASSETS -->
+  <div class="section">
+    <div class="section-label">Logo Assets</div>
+    <div class="logo-grid">
+
+      <div class="logo-preview">
+        <div class="canvas dark">
+          <img src="logo-primary-dark.svg" alt="Primary Logo — Dark"/>
+        </div>
+        <div class="meta">logo-primary-dark.svg — Use on dark / charcoal backgrounds</div>
+      </div>
+
+      <div class="logo-preview">
+        <div class="canvas light">
+          <img src="logo-primary-light.svg" alt="Primary Logo — Light"/>
+        </div>
+        <div class="meta">logo-primary-light.svg — Use on light / beige backgrounds</div>
+      </div>
+
+      <div class="logo-preview">
+        <div class="canvas icon icon-wrap" style="justify-content:center;">
+          <img src="logo-icon.svg" alt="Icon / Avatar"/>
+        </div>
+        <div class="meta">logo-icon.svg — Social avatars, favicons, profile images (500×500)</div>
+      </div>
+
+      <div class="logo-preview">
+        <div class="canvas dark" style="background:#2e2e2e;">
+          <img src="logo-wordmark.svg" alt="Wordmark"/>
+        </div>
+        <div class="meta">logo-wordmark.svg — Text-only, transparent bg, for overlays &amp; embeds</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- CHAOS MARK -->
+  <div class="section">
+    <div class="section-label">The Chaos Mark</div>
+    <div class="mark-explainer">
+      <div class="mark-demo">
+        <div class="bar bar-1"></div>
+        <div class="bar bar-2"></div>
+        <div class="bar bar-3"></div>
+      </div>
+      <div class="mark-desc">
+        <h3>Three bars. One out of line.</h3>
+        <p>
+          The top and bottom bars align — structured, contained, holding it together.
+          The middle bar is shorter and shifted right in crimson. It doesn't break the system.
+          It just doesn't cooperate with it. That's the whole brand in one small mark.
+          Not broken. Just slightly, defiantly off.
+        </p>
+        <p style="margin-top:0.8rem;">
+          Use the mark at any size. Keep the proportions: middle bar is roughly 70% the width
+          of the outer bars, shifted right so it has more margin on the left than the right.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- COLOR PALETTE -->
+  <div class="section">
+    <div class="section-label">Color Palette</div>
+    <div class="color-swatches">
+
+      <div class="swatch">
+        <div class="swatch-block" style="background:#1A1A1A;"></div>
+        <div class="swatch-name">Charcoal</div>
+        <div class="swatch-hex">#1A1A1A</div>
+        <div class="swatch-use">Primary background, body text on light</div>
+      </div>
+
+      <div class="swatch">
+        <div class="swatch-block" style="background:#F5EBDD;"></div>
+        <div class="swatch-name">Warm Beige</div>
+        <div class="swatch-hex">#F5EBDD</div>
+        <div class="swatch-use">Primary text on dark, light backgrounds</div>
+      </div>
+
+      <div class="swatch">
+        <div class="swatch-block" style="background:#D7263D;"></div>
+        <div class="swatch-name">Crimson</div>
+        <div class="swatch-hex">#D7263D</div>
+        <div class="swatch-use">Accent, highlights, chaos mark middle bar</div>
+      </div>
+
+      <div class="swatch">
+        <div class="swatch-block" style="background:#2e2e2e;"></div>
+        <div class="swatch-name">Charcoal Soft</div>
+        <div class="swatch-hex">#2E2E2E</div>
+        <div class="swatch-use">Card backgrounds, section alternates</div>
+      </div>
+
+      <div class="swatch">
+        <div class="swatch-block" style="background:#E8D9C5; border-color: rgba(0,0,0,0.05);"></div>
+        <div class="swatch-name">Beige Dark</div>
+        <div class="swatch-hex">#E8D9C5</div>
+        <div class="swatch-use">Taglines, secondary text on dark</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- TYPOGRAPHY -->
+  <div class="section">
+    <div class="section-label">Typography</div>
+    <div class="type-samples">
+
+      <div class="type-row">
+        <div class="type-sample">
+          <div class="bebas-h1">High<br>Functioning<br><span class="c">Chaos.</span></div>
+        </div>
+        <div class="type-meta">
+          <div class="tf-name">Bebas Neue</div>
+          <div class="tf-spec">
+            Display / Headers<br>
+            Size: 4–9rem<br>
+            Letter spacing: 0.02–0.04em<br>
+            Line height: 0.92–1<br>
+            Google Fonts
+          </div>
+        </div>
+      </div>
+
+      <div class="type-row">
+        <div class="type-sample">
+          <div class="bebas-h2">We're Not Experts. We're Just Honest.</div>
+        </div>
+        <div class="type-meta">
+          <div class="tf-name">Bebas Neue</div>
+          <div class="tf-spec">
+            Section Headings<br>
+            Size: 2–3rem<br>
+            Letter spacing: 0.04–0.06em
+          </div>
+        </div>
+      </div>
+
+      <div class="type-row">
+        <div class="type-sample">
+          <div class="open-tagline">Mostly fine. Occasionally feral.</div>
+        </div>
+        <div class="type-meta">
+          <div class="tf-name">Open Sans</div>
+          <div class="tf-spec">
+            Taglines<br>
+            Size: 1–1.3rem<br>
+            Weight: 300 (Light)<br>
+            Style: Italic
+          </div>
+        </div>
+      </div>
+
+      <div class="type-row">
+        <div class="type-sample">
+          <div class="open-body">
+            This is not a wellness brand. There's no healing journey here,
+            no six-step framework, no toxic positivity. Just two people
+            telling the truth — with humor, honesty, and too much caffeine.
+          </div>
+        </div>
+        <div class="type-meta">
+          <div class="tf-name">Open Sans</div>
+          <div class="tf-spec">
+            Body / Paragraphs<br>
+            Size: 1rem<br>
+            Weight: 400<br>
+            Line height: 1.7
+          </div>
+        </div>
+      </div>
+
+      <div class="type-row">
+        <div class="type-sample">
+          <div class="open-eyebrow">A Blog &amp; Podcast · Who We Are · What We Cover</div>
+        </div>
+        <div class="type-meta">
+          <div class="tf-name">Open Sans</div>
+          <div class="tf-spec">
+            Eyebrows / Labels<br>
+            Size: 0.7–0.75rem<br>
+            Weight: 600<br>
+            Case: UPPERCASE<br>
+            Letter spacing: 0.2em
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- IDENTITY LINES -->
+  <div class="section">
+    <div class="section-label">Identity Lines &amp; Hashtags</div>
+    <div class="identity-pills">
+      <div class="pill">Mostly fine. Occasionally feral.</div>
+      <div class="pill">#HighFunctioningChaos</div>
+      <div class="pill">#MostlyFineOccasionallyFeral</div>
+      <div class="pill">#RealTalkNoFilter</div>
+      <div class="pill neutral">Married AuDHD duo surviving love, parenting &amp; trauma with humor, chaos &amp; too much caffeine.</div>
+      <div class="pill neutral">Chaos can still be lovable.</div>
+    </div>
+  </div>
+
+  <!-- TONE GUIDE -->
+  <div class="section">
+    <div class="section-label">Voice &amp; Tone</div>
+    <div class="tone-grid">
+
+      <div class="tone-card do">
+        <div class="heading">Do</div>
+        <ul>
+          <li>Sound like two real people talking</li>
+          <li>Use dark humor when it carries truth</li>
+          <li>Let discomfort breathe — don't rush to fix it</li>
+          <li>Be blunt and warm in the same breath</li>
+          <li>Write like the audience already gets it</li>
+          <li>PG-13 to R language when it fits naturally</li>
+          <li>Follow the arc: Chaos → Breakdown → Reflection → Takeaway</li>
+        </ul>
+      </div>
+
+      <div class="tone-card dont">
+        <div class="heading">Don't</div>
+        <ul>
+          <li>Therapy-speak or clinical jargon</li>
+          <li>Toxic positivity or "healing journey" language</li>
+          <li>Generic self-help advice</li>
+          <li>Influencer-style inspiration</li>
+          <li>Polished PR voice</li>
+          <li>Overexplaining — let readers arrive on their own</li>
+          <li>Humor that hides from the actual feeling</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="sheet-footer">
+    <span>High Functioning Chaos · Brand Identity Reference · 2026</span>
+    <span>Brandon &amp; Monica Worobi</span>
+  </div>
+
+</div>
+</body>
+</html>
