@@ -1,6 +1,9 @@
 const siteConfig = {
   newsletterEndpoint: "",
-  productInterestEndpoint: ""
+  productInterestEndpoint: "",
+  storeUrl: "https://highfunctioningchaos.store",
+  blogUrl: "https://highfunctioningchaos.blog",
+  spotifyUrl: "https://open.spotify.com/search/High%20Functioning%20Chaos%20Brandon%20Worobi"
 };
 
 const contacts = {
@@ -25,6 +28,16 @@ const contacts = {
     note: "Orders, downloads, merch, bundles, and anything commerce-related."
   }
 };
+
+[
+  ["https://highfunctioningchaos.store", siteConfig.storeUrl],
+  ["https://highfunctioningchaos.blog", siteConfig.blogUrl],
+  ["https://open.spotify.com/search/High%20Functioning%20Chaos%20Brandon%20Worobi", siteConfig.spotifyUrl]
+].forEach(([placeholder, destination]) => {
+  document.querySelectorAll(`a[href="${placeholder}"]`).forEach((link) => {
+    link.href = destination;
+  });
+});
 
 const navToggle = document.querySelector(".nav-toggle");
 
@@ -60,7 +73,7 @@ document.querySelectorAll(".contact-btn").forEach((button) => {
 
 document.querySelectorAll(".buy-button").forEach((button) => {
   button.addEventListener("click", () => {
-    window.alert("Not live yet. You are on the imaginary waitlist, which is still somehow more organized than most of our lives.");
+    window.location.href = siteConfig.storeUrl;
   });
 });
 
