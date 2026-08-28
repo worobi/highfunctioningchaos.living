@@ -149,8 +149,8 @@ section,
   align-items: end;
   padding-top: 8rem;
   background:
-    linear-gradient(90deg, rgba(26, 26, 26, 0.96), rgba(26, 26, 26, 0.82) 52%, rgba(26, 26, 26, 0.72)),
-    url("brand/social/fb-cover.png") center right / cover no-repeat;
+    radial-gradient(120% 160% at 100% 0%, rgba(215, 38, 61, 0.18), transparent 55%),
+    linear-gradient(135deg, var(--ink), var(--charcoal) 65%);
 }
 
 .home-hero {
@@ -884,8 +884,8 @@ p {
     min-height: auto;
     padding-top: 8rem;
     background:
-      linear-gradient(180deg, rgba(26, 26, 26, 0.95), rgba(26, 26, 26, 0.86)),
-      url("brand/social/fb-cover.png") center / cover no-repeat;
+      radial-gradient(140% 160% at 100% 0%, rgba(215, 38, 61, 0.16), transparent 55%),
+      linear-gradient(180deg, var(--ink), var(--charcoal) 70%);
   }
 
   .metrics,
