@@ -10,12 +10,12 @@ const contacts = {
   brandon: {
     name: "Brandon",
     email: "brandon@highfunctioningchaos.living",
-    note: "Systems, site, shop, logistics, and blunt-force clarity."
+    note: "App, website, planning tools, and general questions."
   },
   monica: {
     name: "Monica",
     email: "monica@highfunctioningchaos.living",
-    note: "Story, community, emotional honesty, and the stuff everyone keeps dancing around."
+    note: "Blog, podcast, and community messages."
   },
   nevaeh: {
     name: "Brandon",
@@ -74,24 +74,5 @@ document.querySelectorAll(".contact-btn").forEach((button) => {
 document.querySelectorAll(".buy-button").forEach((button) => {
   button.addEventListener("click", () => {
     window.location.href = siteConfig.storeUrl;
-  });
-});
-
-document.querySelectorAll(".signup-form").forEach((form) => {
-  form.addEventListener("submit", (event) => {
-    event.preventDefault();
-    const email = new FormData(form).get("email");
-    const endpoint = form.dataset.endpoint || siteConfig.newsletterEndpoint;
-
-    if (endpoint) {
-      fetch(endpoint, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email, source: "hfc-site", submittedAt: new Date().toISOString() })
-      }).catch(() => {});
-    }
-
-    form.reset();
-    window.alert("You're on the list. No confetti cannon. Just noted.");
   });
 });
