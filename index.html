@@ -1,84 +1,312 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>High Functioning Chaos | Home</title>
-  <meta name="description" content="Ramblings: honest stories and conversations from High Functioning Chaos, plus the tools we wish we’d had and merch for the inside joke." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="site.css" />
-</head>
-<body><a class="skip-link" href="#main">Skip to content</a>
-<nav class="site-nav" aria-label="Primary navigation"><a class="brand-link" href="index.html" aria-label="High Functioning Chaos home"><img src="brand/logo-icon.svg" alt="" /><span class="brand-name">High Functioning <span>Chaos</span></span></a><button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-links"><span></span></button>
-<ul class="nav-links" id="primary-links">
-<li><a href="ecosystem.html">Ramblings</a>
-</li>
-<li><a href="hfc-os.html">App</a>
-</li>
-<li><a href="https://highfunctioningchaos.store">Store</a>
-</li>
-<li><a href="about.html">About</a>
-</li>
-<li><a href="contact.html">Contact</a>
-</li>
-</ul>
-</nav>
-<main id="main">
-<header class="page-hero home-hero">
-<div class="container hero-grid">
-<div class="hero-copy">
-<div class="eyebrow">Ramblings · The HFC blog &amp; podcast</div>
-<h1>Mostly fine.<br><span class="accent">Occasionally feral.</span></h1>
-<p class="lead">Marriage, parenting, neurodivergence, and looking like we’ve got our shit together. We’re talking about what actually happens—and what we’re learning along the way.</p>
-<div class="btn-row"><a class="btn btn-primary" href="https://highfunctioningchaos.blog">Read the blog</a><a class="btn btn-outline" href="ecosystem.html#podcast">Find the podcast</a></div>
-</div>
-<aside class="hero-card">
-<div class="eyebrow">Behind the stories</div>
-<h2>Well, that didn’t work.</h2>
-<p>Some lessons we learned the hard way. Some we apparently needed to repeat. We’re sharing the mistakes, our part in them, and what we’re trying next.</p>
-<a href="about.html">Meet the people behind HFC &rarr;</a>
-</aside>
-</div>
-</header>
-<section class="band-ink">
-<div class="container">
-<div class="section-head">
-<div><div class="eyebrow">The app · HFC Planner</div><h2>The tools we wish we’d had.</h2></div>
-<p>Remembering everything is a terrible system. Ask us how we know. The HFC app gives your tasks, plans, and loose ends somewhere to go besides your head.</p>
-</div>
-<div class="btn-row"><a class="btn btn-primary" href="https://planner.highfunctioningchaos.living">Open the app</a><a class="btn btn-outline" href="hfc-os.html">Explore the app</a></div>
-</div>
-</section>
-<section class="band-soft">
-<div class="container">
-<div class="store-row">
-<div>
-<div class="eyebrow">Store</div>
-<h2>Wear the inside joke.</h2>
-<p>HFC merch for the days “mostly fine” is doing a lot of work.</p>
-</div><a class="btn btn-outline" href="https://highfunctioningchaos.store">Browse the store</a>
-</div>
-</div>
-</section>
-</main>
-<footer class="footer">
-<div class="container">
-<div class="footer-grid">
-<div>
-<div class="footer-logo">High Functioning <span>Chaos</span>
-</div>
-<div class="copyright">&copy; 2026 High Functioning Chaos</div>
-</div>
-<div class="footer-links"><a href="ecosystem.html">Ramblings</a><a href="hfc-os.html">App</a><a href="https://highfunctioningchaos.store">Store</a><a href="about.html">About</a><a href="contact.html">Contact</a><a href="resources.html">Resources</a>
-</div>
-</div>
-<div class="site-disclaimer">
-<h2>From experience.</h2>
-<p>We’re not therapists or mental health professionals. We’re living this too, making mistakes and figuring things out as we go. We share what we’ve learned in the hope that you won’t have to learn every lesson the hard way like we did—and that you’ll have a few tools in your toolbox when you need them. The ones we wish we’d had. This is lived experience, not professional advice or a replacement for qualified support.</p>
-</div>
-</div>
-</footer>
-<script src="site.js"></script>
-</body></html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>High Functioning Chaos | Mostly fine. Occasionally feral.</title>
+		<meta
+			name="description"
+			content="Honest stories, the HFC podcast, practical tools, and merch. Mostly fine. Occasionally feral."
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="site.css" />
+	</head>
+	<body>
+		<a class="skip-link" href="#main">Skip to content</a>
+		<nav class="site-nav" aria-label="Primary navigation">
+			<a
+				class="brand-link"
+				href="index.html"
+				aria-label="High Functioning Chaos home"
+				><img src="brand/logo-icon.svg" alt="" /><span class="brand-name"
+					>High Functioning <span>Chaos</span></span
+				></a
+			><button
+				class="nav-toggle"
+				type="button"
+				aria-label="Open navigation"
+				aria-expanded="false"
+				aria-controls="primary-links"
+			>
+				<span></span>
+			</button>
+			<ul class="nav-links" id="primary-links">
+				<li><a href="ecosystem.html">Podcast</a></li>
+				<li><a href="https://highfunctioningchaos.blog">Blog</a></li>
+				<li><a href="hfc-os.html">Planner</a></li>
+				<li><a href="resources.html">Resources</a></li>
+				<li><a href="shop.html">Shop</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+		<main id="main">
+			<header class="page-hero home-hero">
+				<div class="container hero-grid">
+					<div class="hero-copy">
+						<div class="eyebrow">
+							Real life. Loose ends. A little dark humor.
+						</div>
+						<h1>
+							Mostly fine.<br /><span class="accent">Occasionally feral.</span>
+						</h1>
+						<p class="lead">
+							Marriage, parenting, neurodivergence, and looking like we’ve got
+							our shit together. Let’s talk about what actually happens.
+						</p>
+						<div class="btn-row">
+							<a
+								class="btn btn-primary"
+								href="https://highfunctioningchaos.blog"
+								>Read the blog</a
+							><a class="btn btn-outline" href="#content"
+								>Listen to the podcast</a
+							>
+						</div>
+					</div>
+					<aside class="hero-card" id="about">
+						<div class="eyebrow">Behind the stories</div>
+						<h2>Well, that didn’t work.</h2>
+						<p>
+							Some lessons we learned the hard way. Some we apparently needed to
+							repeat. Here’s what we’re trying next.
+						</p>
+						<a href="about.html"
+							>Meet the people behind HFC <span aria-hidden="true">→</span></a
+						>
+					</aside>
+				</div>
+			</header>
+			<section class="band-ink" id="content" aria-labelledby="listen-heading">
+				<div class="container listen-layout">
+					<div>
+						<div class="eyebrow">The HFC podcast</div>
+						<h2 id="listen-heading">Pull up a chair.</h2>
+						<p>
+							The conversations that need more room than a post. Press play and
+							hang out.
+						</p>
+						<a href="ecosystem.html#podcast"
+							>More from the podcast <span aria-hidden="true">→</span></a
+						>
+					</div>
+					<div class="podcast-player">
+						<iframe
+							title="High Functioning Chaos on Spotify"
+							src="https://open.spotify.com/embed/show/0340PghyETw5KoMD6yYWJC?utm_source=oembed"
+							width="100%"
+							height="152"
+							allow="
+								autoplay;
+								clipboard-write;
+								encrypted-media;
+								fullscreen;
+								picture-in-picture;
+							"
+							loading="lazy"
+							allowfullscreen
+						></iframe>
+						<p class="small-note">
+							Player not loading?
+							<a href="https://open.spotify.com/show/0340PghyETw5KoMD6yYWJC"
+								>Listen on Spotify</a
+							>.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="band-dark" aria-labelledby="writing-heading">
+				<div class="container store-row">
+					<div>
+						<div class="eyebrow">From the blog</div>
+						<h2 id="writing-heading">For the things we’re still unpacking.</h2>
+						<p>
+							Relationships, burnout, parenting, and our part in the mess. Read
+							the latest stories on the blog.
+						</p>
+					</div>
+					<a class="btn btn-outline" href="https://highfunctioningchaos.blog"
+						>Read the latest</a
+					>
+				</div>
+			</section>
+			<section class="band-soft" aria-labelledby="shop-heading">
+				<div class="container">
+					<div class="section-head">
+						<div>
+							<div class="eyebrow">The HFC shop</div>
+							<h2 id="shop-heading">Wear the inside joke.</h2>
+						</div>
+						<p>
+							For the days “mostly fine” is doing a lot of work. Browse here;
+							choose your options and check out in our shop.
+						</p>
+					</div>
+					<div class="grid-3 merch-grid">
+						<article class="product-card">
+							<a
+								class="product-media"
+								href="https://highfunctioningchaos.store/products/unisex-garment-dyed-heavyweight-t-shirt"
+								aria-label="View Unisex garment-dyed heavyweight t-shirt"
+								><img
+									src="https://cdn.shopify.com/s/files/1/0817/6022/3456/files/unisex-garment-dyed-heavyweight-t-shirt-black-front-and-back-6a5920bf6ee41.jpg?v=1784226005&amp;width=700"
+									alt="Unisex garment-dyed heavyweight t-shirt from High Functioning Chaos"
+									width="700"
+									height="700"
+									loading="lazy"
+							/></a>
+							<div class="product-body">
+								<h3>Unisex garment-dyed heavyweight t-shirt</h3>
+								<p class="product-desc">
+									Everyday HFC. Heavyweight cotton with room to breathe.
+								</p>
+								<a
+									class="btn btn-outline product-link"
+									href="https://highfunctioningchaos.store/products/unisex-garment-dyed-heavyweight-t-shirt"
+									>View product<span class="sr-only"
+										>: Unisex garment-dyed heavyweight t-shirt</span
+									>
+									<span aria-hidden="true">↗</span></a
+								>
+							</div>
+						</article>
+						<article class="product-card">
+							<a
+								class="product-media"
+								href="https://highfunctioningchaos.store/products/unisex-hoodie"
+								aria-label="View Unisex Hoodie"
+								><img
+									src="https://cdn.shopify.com/s/files/1/0817/6022/3456/files/unisex-heavy-blend-hoodie-black-front-6a5921e45eedc.jpg?v=1784226302&amp;width=700"
+									alt="Unisex Hoodie from High Functioning Chaos"
+									width="700"
+									height="700"
+									loading="lazy"
+							/></a>
+							<div class="product-body">
+								<h3>Unisex Hoodie</h3>
+								<p class="product-desc">
+									For cooler days and keeping comfortably to yourself.
+								</p>
+								<a
+									class="btn btn-outline product-link"
+									href="https://highfunctioningchaos.store/products/unisex-hoodie"
+									>View product<span class="sr-only">: Unisex Hoodie</span>
+									<span aria-hidden="true">↗</span></a
+								>
+							</div>
+						</article>
+						<article class="product-card">
+							<a
+								class="product-media"
+								href="https://highfunctioningchaos.store/products/mug-with-color-inside"
+								aria-label="View Mug with Color Inside"
+								><img
+									src="https://cdn.shopify.com/s/files/1/0817/6022/3456/files/white-ceramic-mug-with-color-inside-red-11-oz-front-6a5a59e72f495.jpg?v=1784306165&amp;width=700"
+									alt="Mug with Color Inside from High Functioning Chaos"
+									width="700"
+									height="700"
+									loading="lazy"
+							/></a>
+							<div class="product-body">
+								<h3>Mug with Color Inside</h3>
+								<p class="product-desc">A little chaos with your coffee.</p>
+								<a
+									class="btn btn-outline product-link"
+									href="https://highfunctioningchaos.store/products/mug-with-color-inside"
+									>View product<span class="sr-only"
+										>: Mug with Color Inside</span
+									>
+									<span aria-hidden="true">↗</span></a
+								>
+							</div>
+						</article>
+					</div>
+					<div class="btn-row">
+						<a class="btn btn-primary" href="shop.html">Browse all merch</a>
+					</div>
+				</div>
+			</section>
+			<section class="band-dark" aria-labelledby="tools-heading">
+				<div class="container">
+					<div class="section-head">
+						<div>
+							<div class="eyebrow">A little less to carry</div>
+							<h2 id="tools-heading">The tools we wish we’d had.</h2>
+						</div>
+						<p>
+							Remembering everything is a terrible system. Ask us how we know.
+							Start with one thing that would make today easier.
+						</p>
+					</div>
+					<div class="grid-2">
+						<article class="content-card">
+							<h3>Give the loose ends a home.</h3>
+							<p>Tasks, notes, and plans, somewhere besides your head.</p>
+							<a class="text-link" href="hfc-os.html"
+								>Explore HFC Planner <span aria-hidden="true">→</span></a
+							>
+						</article>
+						<article class="content-card">
+							<h3>Start small. Seriously.</h3>
+							<p>
+								A few practical ideas you can use with what you already have.
+							</p>
+							<a class="text-link" href="resources.html"
+								>Find a starting point <span aria-hidden="true">→</span></a
+							>
+						</article>
+					</div>
+				</div>
+			</section>
+			<section class="band-ink" id="signup" aria-labelledby="signup-heading">
+				<div class="container store-row">
+					<div>
+						<div class="eyebrow">Keep in touch</div>
+						<h2 id="signup-heading">More stories. Less scrolling.</h2>
+						<p>
+							Read the latest on the blog and subscribe there for HFC updates.
+						</p>
+					</div>
+					<a
+						class="btn btn-outline"
+						href="https://highfunctioningchaos.blog/#/portal/signup"
+						>Subscribe on the blog</a
+					>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer-grid">
+					<div>
+						<div class="footer-logo">High Functioning <span>Chaos</span></div>
+						<div class="copyright">&copy; 2026 High Functioning Chaos</div>
+					</div>
+					<div class="footer-links">
+						<a href="index.html">Home</a
+						><a href="https://highfunctioningchaos.blog">Blog</a
+						><a href="ecosystem.html">Podcast</a
+						><a href="hfc-os.html">Planner</a
+						><a href="resources.html">Resources</a><a href="shop.html">Shop</a
+						><a href="about.html">About</a><a href="contact.html">Contact</a>
+					</div>
+				</div>
+				<div class="site-disclaimer">
+					<h2>From experience.</h2>
+					<p>
+						We share lived experience, mistakes, and tools we wish we’d had.
+						We’re not mental health professionals; this isn’t professional
+						advice or a replacement for qualified support.
+					</p>
+				</div>
+			</div>
+		</footer>
+		<script src="site.js"></script>
+	</body>
+</html>
